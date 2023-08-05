@@ -34,7 +34,7 @@ echo -e "\n                \e[101m\e[1;77m  >>  Script By SSLRI << \e[0m\n"
 echo -e "\n       \e[100m\e[1;77m >>  Instagram : \e[1;96m sslri \e[100m\e[1;77m << \e[0m\n"
 
 # Asking the user to enter the username of the target instagram account
-read -p "[#] Enter the username of the target : " Folami_collection 
+read -p "[Folami_collection] Enter the username of the target : " Folami_collection 
 
 # Asking the user to enter a choice for the wordlist
 # ----
@@ -45,7 +45,7 @@ echo -e "\nChoose any of the options below :
 ${"\033[92m"}[${"\033[91m"}1${"\033[92m"}] ${"\033[93m"}1K passwords wordlist file${"\033[00m"}
 ${"\033[92m"}[${"\033[91m"}2${"\033[92m"}] ${"\033[93m"}10K passwords wordlist file${"\033[00m"}
 ${"\033[92m"}[${"\033[91m"}3${"\033[92m"}] ${"\033[93m"}1M passwords wordlist file${"\033[00m"}\n"
-read -p "[#] Enter your choice: "choice3"
+read -p "[Folami_collection] Enter your choice: "choice3"
 
 # Checking the user entered option
 if [[ $choice == "1" ]]; then
