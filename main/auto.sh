@@ -42,10 +42,9 @@ read -p "[Folami_collection] Enter the username of the target : " Folami_collect
 # 2. There are three wordlist files : 1K passwords, 10K passwords, and 1M passwords.
 # ----
 echo -e "\nChoose any of the options below :
-${"\033[92m"}[${"\033[91m"}1${"\033[92m"}] ${"\033[93m"}1K passwords wordlist file${"\033[00m"}
-${"\033[92m"}[${"\033[91m"}2${"\033[92m"}] ${"\033[93m"}10K passwords wordlist file${"\033[00m"}
+
 ${"\033[92m"}[${"\033[91m"}3${"\033[92m"}] ${"\033[93m"}1M passwords wordlist file${"\033[00m"}\n"
-read -p "[Folami_collection] Enter your choice: "choice3"
+read -p "[3] Enter your choice: "choice3"
 
 # Checking the user entered option
 if [[ $choice == "1" ]]; then
