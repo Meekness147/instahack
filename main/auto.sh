@@ -9,7 +9,7 @@
 #
 # Changes made in the last modification :
 # 1. Adding commented docs and more comments to the script's code in order to make it more clean and easily readable to the programmers and other hackers.
-# 2. Removing some errors and also adding more proper output and specially the colored output system.
+# 2. Removing some errors and also adding more proper output and specially the colored output system. 
 # 3. Also, we removed the dependency of the 'lolcat' package in this script file too.
 #
 
