@@ -69,5 +69,5 @@ fi
 
 # If we reach upto here, that means the script executed properly. Now, we will again launch the instahack.sh script (the main script file for the tool)
 sleep 5
-cd $HOME/instahack
+cd $checkout/instahack
 bash instahack.sh
