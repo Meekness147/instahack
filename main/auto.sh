@@ -57,7 +57,7 @@ elif [[ $choice == "2" ]]; then
 
 	instagram-py --username $Folami_collection --password-list $checkout/instahack/pass/pass2.txt
 elif [[ $choice == "3" ]]; then
-	# If the user entered the option for the 1M password wordlist file
+	# If the user entered the option for the 1M password wordlist file 
 
 	instagram-py --username $Folami_collection --password-list $checkout/instahack/pass/pass3.txt
 else
