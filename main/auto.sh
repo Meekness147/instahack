@@ -51,7 +51,7 @@ read -p "[#] Enter your choice: "1"
 if [[ $choice == "1" ]]; then
 	# If the user entered the option for the 1K password wordlist file
 
-	instagram-py --username $Folami_collection --password-list $HOME/instahack/pass/pass1.txt 
+	instagram-py --username $Folami_collection --password-list $checkout/instahack/pass/pass1.txt 
 elif [[ $choice == "2" ]]; then
 	# If the user entered the option for the 10K password wordlist file
 
