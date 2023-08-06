@@ -24,7 +24,7 @@ DEFCOL="\033[00m"
 
 # Displaying the banner of the tool on the console screen
 clear
-echo -e "${YELLOW}
+echo -e "${"\033[93m"}
  ____  _  _  ___  ____   __    _   _    __    ___  _  _ 
 (_  _)( \( )/ __)(_  _) /__\  ( )_( )  /__\  / __)( )/ )
  _)(_  )  ( \__ \  )(  /(__)\  ) _ (  /(__)\( (__  )  ( 
