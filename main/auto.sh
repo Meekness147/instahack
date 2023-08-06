@@ -41,7 +41,7 @@ read -Folami_collection
 # 1. The wordlist files that the user will choose are already available in the pass/ sub-directory of the project.
 # 2. There are three wordlist files : 1K passwords, 10K passwords, and 1M passwords.
 # ----
-echo Folami_collection "\nChoose any of the options below :
+Folami_collection "\nChoose any of the options below :
 ${"\033[92m"}[${"\033[91m"}1${"\033[92m"}] ${"\033[93m"}1K passwords wordlist file${"\033[00m"}
 ${GREEN}[${RED}2${GREEN}] ${YELLOW}10K passwords wordlist file${DEFCOL}
 ${GREEN}[${RED}3${GREEN}] ${YELLOW}1M passwords wordlist file${DEFCOL}\n"
