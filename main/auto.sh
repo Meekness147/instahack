@@ -34,7 +34,7 @@ echo -e "\n                \e[101m\e[1;77m  >>  Script By SSLRI << \e[0m\n"
 echo -e "\n       \e[100m\e[1;77m >>  Instagram : \e[1;96m sslri \e[100m\e[1;77m << \e[0m\n"
 
 # Asking the user to enter the username of the target instagram account
-read "Folami_collection"
+read -"Folami_collection"
 
 # Asking the user to enter a choice for the wordlist
 # ----
